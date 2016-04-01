@@ -21,7 +21,11 @@ INSTALLED_APPS += (
     'django_countries',  # for sponsor addresses
     # 'user_map',
     'disqus',
+    'account',
 )
+
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+ACCOUNT_EMAIL_CONFIRMATION_EMAIL = False
 
 # Set disqus and shortname
 # noinspection PyUnresolvedReferences
