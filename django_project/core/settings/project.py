@@ -83,7 +83,7 @@ REQUIRE_JS_PATH = '/static/js/modules/requirejs/require.js'
 GRUNT_MODULES = {
     'module_1': {
         'main': '/static/js/main',
-        'optimized': '/static/js/optimized.js',
+        'optimized': 'js/optimized.js',
     },
     'module_2': {
         'files': ['static/a.js','static/b.js'],
