@@ -86,7 +86,7 @@ update-migrations:
 	@echo "------------------------------------------------------------------"
 	@docker-compose -p $(PROJECT_ID) run uwsgi python manage.py makemigrations
 
-collectstatic:
+collectstatic: gruntserver
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Collecting static in production mode"
@@ -271,7 +271,7 @@ gruntserver:
 	@echo "------------------------------------------------------------------"
 	@echo "Run grunt"
 	@echo "------------------------------------------------------------------"
-	@docker exec $(PROJECT_ID)-uwsgi python manage.py gruntserver
+	@docker exec $(PROJECT_ID)-uwsgi grunt requirejs
 
 
 # ----------------------------------------------------------------------------
