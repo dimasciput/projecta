@@ -49,6 +49,8 @@ define([
 		// Re-rendering the App just means refreshing the statistics -- the rest
 		// of the app doesn't change.
 		render: function () {
+			console.log('hello');
+			var test = true;
 			var completed = Todos.completed().length;
 			var remaining = Todos.remaining().length;
 

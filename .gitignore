@@ -114,3 +114,5 @@ django_project/media
 # Backups
 *.dmp
 deployment/backups
+
+optimized.js
