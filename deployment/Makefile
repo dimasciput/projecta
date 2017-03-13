@@ -271,7 +271,7 @@ gruntserver:
 	@echo "------------------------------------------------------------------"
 	@echo "Run grunt"
 	@echo "------------------------------------------------------------------"
-	@docker exec $(PROJECT_ID)-uwsgi grunt requirejs
+	@docker-compose -p $(PROJECT_ID) run uwsgi python manage.py gruntserver
 
 
 # ----------------------------------------------------------------------------

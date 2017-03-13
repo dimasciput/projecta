@@ -40,5 +40,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
 
     // Register tasks here.
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['requirejs']);
 };
